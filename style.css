@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family:"Montserrat", sans-serif ;
+    box-sizing: border-box;
+}
+
+@keyframes rotation{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(359deg);
+    }
+}
+
+@keyframes move-right{
+    0%{
+        transform: translateX(0%);
+    }
+    50%{
+        transform: translateX(350%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+@keyframes rotation-move-left{
+    0%{
+        transform: translateX(0%) rotate(0deg);
+    }
+    50%{
+        transform: translateX(-200%) rotate(180deg);
+    }
+    100%{
+        transform: translateX(0%) rotate(359deg);
+    }
+}
+
+@keyframes scale-move-up{
+    0%{
+        transform: translateY(0%) scale(1.0);
+    }
+    50%{
+        transform: translateY(-100%) scale(0.5);
+    }
+    100%{
+        transform: translateY(0%) scale(1.0);
+    }
+}
+
+@keyframes diagonal{
+    0%{
+        transform: translateY(0%) scale(1.0) left;
+    }
+    50%{
+        transform: translateY(-100%) scale(0.5);
+    }
+    100%{
+        transform: translateY(0%) scale(1.0);
+    }
+}
+
+
+@keyframes bottom-move-left{
+    0%{
+        transform: translateX(0%);
+    }
+    50%{
+        transform: translateX(-350%);
+    }
+    100%{
+        transform: translateX(0%);
+}
+}
+@keyframes move-right-2{
+    0%{
+        transform: translateX(0%);
+    }
+    50%{
+        transform: translateX(350%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+
+@keyframes move-right-3{
+    0%{
+        transform: translateY(0%);
+    }
+    50%{
+        transform: translateY(130%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+@keyframes move-left{
+    0%{
+        transform: translateY(0%);
+    }
+    50%{
+        transform: translateY(-130%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
+}   
+
+section{
+    padding: 100px 0px;
+}
+
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.container{
+    max-width: 1300px;
+    margin: 0 auto;
+}
+.section-title{
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.section-text{
+    font-size: 20px;
+    line-height: 1.5;
+}
+.section-card{
+    background-color: #FFFFFF;
+    border-radius: 30px;
+    box-shadow: 10px 10px 0 #E06161;
+    padding:30px ;
+}
+
+
+
+
+.menu{
+    background-color: black;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%; left: 0;
+    z-index: 3;
+}
+.menu li{
+    margin-left:  20px;
+    display: inline-block;
+}
+.menu a{
+    color: #fff;
+
+}
+.menu a:hover{
+    color: palevioletred;
+}
+
+
+
+.header{
+    background-color: rgb(240, 183, 174);
+    text-align: center;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+.header-bg img{
+    position: absolute;
+    z-index: 1;
+} 
+.header-bg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.header h1{
+    font-size: 100px;
+    color: #fff;
+    text-shadow: 10px 10px 0 #E06161 ;
+
+}
+.header-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: fit-content;
+    z-index: 2;
+}
+
+
+.about{
+    padding: 100px 0;
+
+}
+
+
+#cdb{
+    bottom: -180px;
+    right: -100px;
+    animation: rotation 10s linear 0s infinite ;
+}
+#cdb:hover{
+    transform: rotate(360deg);
+    transition: 2s;
+}
+
+
+#t{
+    top: 250px;
+    animation: move-right 3s linear 0s infinite ;
+}
+
+
+#c3{
+    bottom: -35px;
+    left: -120px;
+    animation: scale-move-up 10s linear 0s infinite;
+}
+#octagon{
+    bottom: 150px;
+    right: 550px;
+    animation: rotation-move-left 3s linear 0s infinite;
+}
+#cb{
+    bottom: 35px;
+    left: 300px;
+    animation: diagonal 10s linear 0s infinite;
+
+}
+#c2{
+    top: -15px;
+    right: -100px;
+    animation: bottom-move-left 10s linear  infinite ;
+}
+#c1{
+    top: -15px;
+    left: -100px;
+    animation: move-right-2 10s linear  infinite;
+}
+
+#pic{
+    position: absolute;
+    animation: move-right-3 8s linear  infinite;
+    z-index: 0;
+}
+
+#bgc3{
+    position: absolute;
+    right: 80px;
+    animation:move-left 8s linear  infinite;
+    z-index: 0;
+}
+
+.header a{
+    margin: 20px;
+}
+
+.deals{
+    padding: 10px;
+    background: linear-gradient(7deg, #DB7E7E 18.07%, #FFC997 70%, #FFFFFF 70%);
+}
+.deals .left{
+    display: inline-block;
+    vertical-align: top;
+    width: 45%;
+    
+}
+
+.deals img{
+    width: 45%;
+    margin: 50px 0 0 15px;
+    vertical-align: bottom;
+}
+
+
+
+
+
+.offer{
+    background: linear-gradient(340.62deg, #FFFFFF 45.63%, #DB7F7E 45.64%
+    );
+    text-align: center;
+}
+.offer h2{
+    color: #fff;
+}
+.offer li{
+    display: inline-block;
+    width: calc(33% - 40px);
+    background-color: #fff;
+    border-radius: 30px;
+    border: solid 5px #FFC997;
+    height: 500px;
+    margin: 10px 20px;
+    padding: 15px;
+    text-align: center;
+    vertical-align: top;
+}
+.offer hr{
+    width: 60%;
+    height: 2px;
+    background-color: #E06161;
+    border: none;
+    margin: 10px auto;
+}
+
+.portfolio{
+    text-align: center;
+}
+.portfolio img{
+    display: inline-block;
+    width: 45%;
+    border-radius: 30px;
+    border: solid 5px #FFC997;
+    
+}
+
+.advantage{
+    width: 800px;
+    margin: 50px auto;
+    position: relative;
+    right: 100px;
+    z-index: 1;
+
+}
+
+
+.advantage:nth-child(2){
+    right: -100px;
+}
+
+
+
+
+.footer{
+    background: linear-gradient(-180deg,#DB7E7E 18.07%, #FFC997 70%);
+    text-align: center;
+}
+.btn{
+    width: 300px;
+    height: 80px;
+    display: inline-block;
+    padding: 0;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 80px;
+    border-radius: 50px;
+}
+.better{
+    overflow: hidden;
+}
+
+
+.advantage ul{
+    
+    list-style-type:"○";
+}
+.advantage li{
+    padding-left: 10px;
+}
+html{
+    scroll-behavior: smooth;
+}

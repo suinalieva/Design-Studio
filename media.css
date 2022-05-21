@@ -1,0 +1,96 @@
+@media(max-width:1024px){
+    .advantage{
+        width: 60%;
+        right: 0px;
+       
+    
+    }
+    
+    
+    .advantage:nth-child(2){
+        right: 0px;
+    }
+
+    .offer img{
+        width: 100%;
+    }
+    .offer li{
+        margin: 10px;
+
+    }
+}
+@media(max-width:768px){
+    .menu{
+        position: static;
+        flex-direction: column;
+    }
+    .deals .left{
+        width: 85%;
+
+    }
+    .deals{
+        text-align: center;
+    }
+    .deals img{
+        width: 60%;
+    }
+    .offer li{
+       width: 50%;
+
+    }
+}
+@media(max-width:425px){
+    .header h1{
+        font-size: 60px;
+    }
+    .deals img{
+        width: 100%;
+    }
+    .offers li{
+        width: 100%;
+        margin: 20px  0;
+    } 
+    .offer{
+        padding: 5px;
+    }
+    #pic{
+        width: 150px;
+    }
+    .menu li{
+        display: block;
+    }
+    .menu ul{
+        height: 0px;
+        transition: 3s;
+     width: 100%;
+    }
+    .menu a{
+        display: block;
+        padding: 20px 0;
+    }
+    .menu:hover ul{
+        height: 100%;
+    }
+    .header-bg img{
+        width: 200px;
+    }
+    .advantage{
+        width: 100%;
+    }
+    .better{
+        padding: 10px;
+    }
+
+    .section-title{
+        font-size: 30px;
+        
+    }
+    .portfolio img{
+        width: 100%;
+    }
+    .portfolio{
+        padding: 10px;
+    }
+}
+
+
